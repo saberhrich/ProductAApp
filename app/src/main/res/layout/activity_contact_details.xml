@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSecondary"
+    tools:context=".ContactDetails">
+
+
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="383dp"
+        android:orientation="vertical">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+
+
+                <Button
+                    android:id="@+id/btnDelete"
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:text="DELETE" />
+
+                <Button
+                    android:id="@+id/btnUpdate"
+                    android:layout_width="131dp"
+                    android:layout_height="match_parent"
+                    android:text="EDIT" />
+
+                <Button
+                    android:id="@+id/buttonC"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="MAJ" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/LibelleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/noteTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="@dimen/_12sdp"
+            tools:text="This is for note area This is for note area This is for note area" />
+
+        <TableLayout
+            android:id="@+id/laytab"
+            android:layout_width="match_parent"
+            android:layout_height="364dp"
+            android:padding="@dimen/_10sdp"
+            android:stretchColumns="2">
+
+            <TableRow>
+
+                <TextView
+                    android:text="Code a barre"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/CodeTv"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/colorTextSecondary"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold"
+                    tools:text="0177000800" />
+            </TableRow>
+
+
+            <TableRow>
+
+                <TextView
+                    android:text="Prix de vente"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/PriceTv"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/colorTextSecondary"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold"
+                    tools:text="jowel@gmail.com" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:text="Produit"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ProduitTv"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/colorTextSecondary"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold"
+                    tools:text="0177000800" />
+            </TableRow>
+
+
+            <TableRow>
+
+                <TextView
+                    android:text="Added Time"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/addedTimeTv"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/colorTextSecondary"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold"
+                    tools:text="0177000800" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:text="Updated Time"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/updatedTimeTv"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/colorTextSecondary"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold"
+                    tools:text="0177000800" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/profileIv"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_launcher" />
+
+            </TableRow>
+
+        </TableLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
